@@ -113,7 +113,7 @@ void scan(){
 	}
 	barcode_state = END;
 	currentState = BLINK;*/
-	MotorSpeed(85,125);
+	MotorSpeed(100,125);
 	unsigned long time_out, Wstarttime;
 	time_out=Wstarttime=SystemTime();
 	enum BarcodeState barcode_state = DARK;

@@ -1102,10 +1102,10 @@ void scan(){
 	}
 	barcode_state = END;
 	currentState = BLINK;*/
-	MotorSpeed(85,125);
+	MotorSpeed(100,125);
  8cc:	6d e7       	ldi	r22, 0x7D	; 125
  8ce:	70 e0       	ldi	r23, 0x00	; 0
- 8d0:	85 e5       	ldi	r24, 0x55	; 85
+ 8d0:	84 e6       	ldi	r24, 0x64	; 100
  8d2:	90 e0       	ldi	r25, 0x00	; 0
  8d4:	17 dd       	rcall	.-1490   	; 0x304 <MotorSpeed>
 	unsigned long time_out, Wstarttime;
@@ -1132,7 +1132,7 @@ void scan(){
 			barcode_state = BRIGHT;
  8e4:	d0 e0       	ldi	r29, 0x00	; 0
 	currentState = BLINK;*/
-	MotorSpeed(85,125);
+	MotorSpeed(100,125);
 	unsigned long time_out, Wstarttime;
 	time_out=Wstarttime=SystemTime();
 	enum BarcodeState barcode_state = DARK;
@@ -1186,7 +1186,7 @@ void scan(){
 			barcode_state = DARK;
  93e:	c1 2f       	mov	r28, r17
 	currentState = BLINK;*/
-	MotorSpeed(85,125);
+	MotorSpeed(100,125);
 	unsigned long time_out, Wstarttime;
 	time_out=Wstarttime=SystemTime();
 	enum BarcodeState barcode_state = DARK;
